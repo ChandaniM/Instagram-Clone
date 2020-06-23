@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700;800&display=swap');
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+} 
+/*head section*/
+header{
+	position:-webkit-sticky;
+	top:0;
+	position: sticky;
+	overflow:hidden;
+	width:100%;
+	background-color: #fff;
+	box-shadow:0 0.5px 3px 0 #808080;
+	padding: 0.2em;
+	text-align: center;
+	align-items: center;
+}
+.flex{
+	display: flex;
+	justify-content: space-between; 
+}
+h1{
+	margin:0 auto;
+	font-family: 'Lobster Two', cursive;
+	font-weight:300;
+}
+header .container i{
+	align-self: center;
+}
+/* story section*/
+.story-container{
+		width:100%;
+	}
+.story-subContainer{
+	overflow-x: scroll;
+	overflow-y:hidden;
+	padding:0.5em;
+}
+img{
+	max-width:100%;
+}
+.story-image-in{
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.img-container{
+	background:linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+	width:4em;
+	height:4em;
+	border-radius:50%;
+	padding:0.2em;
+}
+.story-img + .story-img{
+	margin-left:.50em;
+}
+/*middle section*/
+.post-box{
+	margin:0 auto;
+	margin-top:1.5em;
+	padding-bottom:2em;
+	width:90%;
+	border: 1px solid #C0C0C0;
+}
+.profile-img{
+	border-radius: 50%;
+}
+.container{
+	width:95%;
+	margin:0 auto;
+	display: flex;
+}
+.head-box{
+    width:100%;
+	height:5em;
+}
+.img-box{
+
+width:100%;
+}
+.foot-box{
+width: 100%;
+} 
+.profile-container{
+	border-radius: 50%;
+	width:3.3em;
+	height:3.3em;
+	align-self: center; 
+	margin-top:0.5em;
+}
+.text-msg{
+	align-self:center;
+	margin-left:0.4em;
+	width:80%;
+}
+.mid-pro{
+	width: 100%;
+}
+.mess-box1{
+	font-weight: 500;
+	font-size: 0.8rem;
+}
+.span-box{
+	margin-left: 2%;
+	  font-family: 'Montserrat', sans-serif,'Open Sans', sans-serif;
+}
+
+.iconsTray{
+	justify-content: space-between;
+	margin-bottom:0.5em;
+}
+.iconssubTray{ 
+	width:25%;
+}
+.fa-bookmark-o{
+	align-self: flex-end;
+}		
+.fa-ellipsis-v{
+	font-size:1.2rem;
+	align-self: center;
+}
+.mess-box2{
+		width:80%;
+		display:flex;
+		margin-left: 2%;
+		font-weight: 600;
+		font-size: 0.8rem;
+}
+.mess-box3{
+		color: #696969;
+		margin-left: 2%;
+		font-weight:500;
+		font-size: 0.8rem;
+}
+/*footer section*/ 
+footer{
+	bottom: 0;	
+	position: sticky;
+	overflow:hidden;
+	width:100%;
+	background-color:#f5f5f5;
+	box-shadow: inset 0 1px 2px 0 #696969;
+	padding: 0.5em;
+}
+.footer-icons{
+		justify-content: space-around;
+}
