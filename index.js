@@ -15,15 +15,24 @@ function stories(){
 		"https://optimizehq.imgix.net/authors/headshots/robin-sharma.jpg",
 		"https://fsb.zobj.net/crop.php?r=IQZARLmTqSCbYYLfINosnDgLs0yEBteax4WB-HOvFJ38AiymyWd_KRtmR-sQc7JsYbk_2YHEq2sOyGEunqFw1pt7dd0Kdzk5pYhdn_NcTuriLn6e1p8ZmcMWWaGWJ7hBUuuKdkcWV_9reLY4"
 	];
+	
 	var storyContainer=document.getElementsByClassName('story-subContainer');
 		for (var i = 0; i<10; i++) {
 			var div = document.createElement("div");//parent
+				div.setAttribute('class','story-img');
 			var subDiv= document.createElement("div");//child
+			subDiv.setAttribute('class','img-container');
 			div.appendChild(subDiv); //append child to parent
+			
+			var divtext=document.createElement("div");
+			divtext.setAttribute('class','div-name');
+			var spanbox=document.createElement("span");
+			spanbox.setAttribute('class','span-name');
+			divtext.appendChild(spanbox);
+			div.appendChild(divtext);
+
 			var img= document.createElement("img");// grandchild  
 			subDiv.appendChild(img);
-			div.setAttribute('class','story-img');
-			subDiv.setAttribute('class','img-container');
 			img.setAttribute('class','story-image-in');
 			img.setAttribute('alt','Images');
 			img.setAttribute('src',imagesArray[i]);
@@ -46,6 +55,8 @@ function posts(){
 	 ];
 	 var namearr=["champaqnepapi","chandani","Taylorswift","selenagomez","pearlvpuri","tony stark","shawnmendes","zainimam_official","robinsharma","_PS_"];
 	 // likes texts 
+	 var namestories =["YourStory","champaqnepapi","Taylorswift","selenagomez","pearlvpuri","tony stark","shawnmendes","zainimam_official","robinsharma","_PS_"];
+
       var footarr1=[
 	      "liked by fredvanvleet 6,592,409others",
 	      "1,280likes",
@@ -92,7 +103,7 @@ function posts(){
 		//head-box
 		part1.setAttribute('class','head-box');	
 		var containerdiv=document.createElement('div');
-		containerdiv.classList.add('container');
+		containerdiv.classList.add('container','headsection');
 		let profileContainer=document.createElement('div');
 		profileContainer.classList.add('profile-container');
 		var img= document.createElement("img");// profile image 
@@ -195,8 +206,10 @@ function posts(){
 		var spantext3=document.getElementsByClassName('mess-box2');
 		var spantext4=document.getElementsByClassName('mess-box3');
 		var spanref=document.getElementsByClassName('text-msg');
+		var spanstories=document.getElementsByClassName('span-name')
 	for (var i =0; i<10; i++) {
 			spanref[i].innerHTML=namearr[i];
+			spanstories[i].innerHTML=namestories[i];
 
 			spantext2[i].innerHTML=footarr1[i];
 			spantext3[i].innerHTML=footarr2[i];
