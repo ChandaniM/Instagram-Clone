@@ -13,7 +13,7 @@ header{
 	position: sticky;
 	overflow:hidden;
 	width:100%;
-	background-color: #fff;
+	background-color:#fafafa;
 	box-shadow:0 0.5px 3px 0 #808080;
 	padding: 0.2em;
 	text-align: center;
@@ -62,8 +62,14 @@ img{
 	margin:0 auto;
 	margin-top:1.5em;
 	padding-bottom:2em;
-	width:90%;
+	width:100%;
 	border: 1px solid #C0C0C0;
+}
+.chat-side-icon{
+	width:2.5em;
+}
+.icon-image{
+	max-width: 100%;
 }
 .profile-img{
 	border-radius: 50%;
