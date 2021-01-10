@@ -1,0 +1,162 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+}
+.container{
+	width:95%;
+	margin:0 auto;
+	display: flex;
+} 
+/*head section*/
+header{
+	position:-webkit-sticky;
+	top:0;
+	position: sticky;
+	overflow:hidden;
+	width:100%;
+	background-color:#fafafa;
+	/*box-shadow:0 0.5px 3px 0 #808080;*/
+	padding: 0.2em;
+	text-align: center;
+	align-items: center;
+}
+.flex{
+	display: flex;
+	justify-content: space-between; 
+}
+.flex-space{
+	display: flex;
+}
+/*header of profile*/
+h3{
+	margin:0;
+}
+header .container i{
+	align-self: center;
+}
+.user_name{
+	/*border:1px solid red;*/
+	margin-left: 0.2em;
+}
+.box{
+	/*border:1px solid green;*/
+	padding:0.1em;
+}
+.sub-box{
+	/*border:0.1em solid blue;*/
+	margin: 0.1em 0.5em;
+	width: 16%;
+}
+.sub-box .one {
+	margin-right:1em;
+}
+/*profile section*/
+.profile_section{
+	/*border:0.1em solid red;*/
+	padding:1em;
+}
+.pro_container{
+	/*border:0.1em solid red;*/
+	width:4em;
+	height:4em;
+	border-radius: 50%;
+}
+
+.user_image{
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+}
+.profile_box1{
+	/*border: 1px solid black;*/
+	padding: 0.2em;
+	margin-bottom:0.2em;
+}
+.pro_sub2{
+	/*border: 1px solid green;*/
+		display:flex;
+	justify-content: space-between;
+}
+.sub_part2{
+	/*border: 0.1em solid pink;*/
+	flex-direction: column;
+	text-align: center;
+	align-self: center;
+}
+.sub_part2+.sub_part2{
+	margin-left: 1em;
+}
+.profile_box2{
+	/*border: 0.1em solid #f21ec5;*/
+}
+.text{
+	display: block;
+}
+.edit{
+	width: 100%;
+	margin-top: 0.5em;
+	padding: 0.2em;
+	border:0.1em solid #cdcdcd;
+	color: #000;
+	background-color: #fff;
+	border-radius: 0.2em;
+}
+.add{
+	margin-top:0.2em;
+}
+.slider{
+	margin-top:1em;
+	/*border: 1px solid blue;*/
+	display: flex;
+	justify-content:space-between;
+}
+.sub_slider{
+	width:50%;
+	display: flex;
+	justify-content: space-between;
+	/*border: 1px solid green;*/
+}
+.img_icon{
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+/**/
+.image_box{
+border: 1px solid red;	
+}
+.grid-container {
+display: grid;
+grid-gap: 0.1em;
+grid-template-columns: auto auto auto;
+border: 1px solid red;
+}
+.sub_grid{
+width:8.2em;
+height:7.2em;
+border: 1px solid blue;
+}
+.sub_grid > div{
+ text-align: center;
+}
+.grid_image{
+	width:100%;	
+	height:100%;
+}
+.box_img{
+width:8.2em;
+height:7.2em;
+}
+/*footer*/
+footer{
+	bottom: 0;	
+	position: sticky;
+	overflow:hidden;
+	width:100%;
+	box-shadow: inset 0 1px 2px 0 #696969;
+	padding: 0.5em;
+}
+.footer-icons{
+		justify-content: space-around;
+}
