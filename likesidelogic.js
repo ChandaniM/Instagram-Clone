@@ -66,3 +66,5 @@ var spanmsg=["champaqnepapi liked your comment:awesome song sir!.","pearlvpuri m
 		for (var i =0; i<20; i++) {
 			spanref[i].innerHTML=spanmsg[i];
 		}
+
+		

@@ -62,7 +62,7 @@ img{
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	/*align-items: center;*/
 	padding: 0.1em;
 }
@@ -88,12 +88,12 @@ img{
 }
 .head-box{
     width:100%;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 .headsection{
 	width: 95%;
 	padding-bottom:0.5em;
-	border: 1px solid #f00;
+	/*border: 1px solid #f00;*/
 }
 .img-box{
 width:100%;
