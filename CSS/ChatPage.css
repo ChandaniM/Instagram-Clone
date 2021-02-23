@@ -1,0 +1,74 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+}
+header{
+	position:-webkit-sticky;
+	top:0;
+	position: sticky;
+	overflow:hidden;
+	width:100%;
+	background-color: #fff;
+	box-shadow:0 0.5px 3px 0 #696969;
+	padding: 0.2em;
+	/*border: 1px solid red;*/
+
+}
+.upperheader{
+	width:98%;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+}
+.flex{
+	display: flex;
+	justify-content: space-between; 
+}
+.flex-space{
+	display: flex;
+}
+.iconbox{
+	width:2em;
+	height:2em;
+	align-self: center;
+	/*border: 1px solid blue;*/
+}
+.ICON{
+	width: 100%;
+	height: 100%;
+}
+.block{
+	width: 1.5em; 
+	height: 1.5em;
+	margin-top: 0.2em;
+	/*border: 1px solid green;*/
+}
+.profilename{
+	/*width:30%;*/
+	/*border: 1px solid green;*/
+}
+.img_container{
+	/*border: 1px solid blue;*/
+	width:2.3em;
+	height:2.3em;
+	/*padding: 1em;*/
+	/*border-radius: 50%;*/
+}
+.Image_profile{
+	width: 100%;
+	height: 100%;
+	padding: 0.1em;
+	border: 1px solid #868686;
+	border-radius: 50%;
+}
+.profiletext{
+	margin-left:0.5em;
+	font-size: 1.5em;
+	align-self: center;
+}
+.ICON_BOX{
+	width:20%;
+	/*border: 1px solid red;*/
+
+}

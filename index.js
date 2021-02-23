@@ -165,6 +165,7 @@ function posts(){
 		let share=document.createElement('i');
 		share.classList.add('fa');
 		share.classList.add('fa-location-arrow');
+		// share.setAttribute('src',"https://cdn2.iconfinder.com/data/icons/instagram-outline/19/7-512.png");
 		share.style.fontSize='1.5rem';
 		iconssubtray.appendChild(share);
 

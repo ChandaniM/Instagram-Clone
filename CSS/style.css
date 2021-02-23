@@ -166,3 +166,12 @@ footer{
 .footer-icons{
 		justify-content: space-around;
 }
+.iconbox{
+	width:2em;
+	height:2em;
+	/*border: 1px solid blue;*/
+}
+.ICON{
+	width: 100%;
+	height: 100%;
+}
