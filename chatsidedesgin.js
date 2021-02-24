@@ -1,3 +1,14 @@
+function chatcode(name) {
+	// var index=imagesArray[index];
+	// console.log(imagesArray[index]);
+	document.getElementsByClassName("chatcode")[0].style.display="block";
+	document.getElementsByClassName("allchatcode")[0].style.display="none";
+	document.getElementsByClassName("profiletext")[0].innerHTML=name;
+	document.getElementsByClassName("Image_profile")[0].setAttribute('src','imagesArray[index]');
+}
+
+	
+
  const imagesArray=[
 		"https://www.thesprucepets.com/thmb/pPXXUm0Ng3Cwlcsk5iTevb41fPc=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/40386520_272666870012786_5732696489881099002_n-5b98360ac9e77c0050fa8a73.jpg",
 		"https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTQ3NTI2OTA4NzY5MjE2MTI4/drake_photo_by_prince_williams_wireimage_getty_479503454.jpg",
@@ -10,6 +21,7 @@
 		"https://optimizehq.imgix.net/authors/headshots/robin-sharma.jpg",
 		"https://fsb.zobj.net/crop.php?r=IQZARLmTqSCbYYLfINosnDgLs0yEBteax4WB-HOvFJ38AiymyWd_KRtmR-sQc7JsYbk_2YHEq2sOyGEunqFw1pt7dd0Kdzk5pYhdn_NcTuriLn6e1p8ZmcMWWaGWJ7hBUuuKdkcWV_9reLY4"
 	];
+
 var nameArray=["chandani","champaqnepapi","Taylorswift","selenagomez","pearlvpuri","tony stark","shawnmendes","zainimam_official","robinsharma","_PS_"];
  var storyContainer=document.getElementsByClassName('chat-view');
 		for (var i = 0; i<10; i++) {
@@ -22,13 +34,23 @@ var nameArray=["chandani","champaqnepapi","Taylorswift","selenagomez","pearlvpur
 			imagediv.classList.add('image');
 			imagediv.setAttribute('src',imagesArray[i]);
 			subdiv.appendChild(imagediv);
+
 			var subpart=document.createElement("div");
 			subpart.classList.add('chat-name-list','flex');
 			div.appendChild(subpart);
-			var spantext=document.createElement("span");
-			// spantext.classList.add('span-msg');s
+
+			// var linkpage=document.createElement("a");
+			// linkpage.classList.add("Linkpage");
+			 // linkpage.setAttribute('href', 'ChatPage.html');
+
+			 var spantext=document.createElement("span");
+			spantext.classList.add('span-msg');
 			spantext.innerHTML=nameArray[i];
-			subpart.appendChild(spantext);
+			 spantext.setAttribute('onclick','chatcode("'+nameArray[i]+'")');
+			// linkpage.appendChild(spantext);
+			subpart.appendChild(spantext);	
+
+
 			let camera=document.createElement('i');
 		camera.classList.add('fa');
 		camera.classList.add('fa-camera');

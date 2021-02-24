@@ -2,161 +2,105 @@
 <html>
 <head>
 	<title></title>
+	<!-- chatsidepage.css -->
+	<link rel="stylesheet" type="text/css" href="./CSS/chatsidepage.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/ChatPage.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<!-- header of page -->
-<header>
-	<div class="chat-header container flex">
-			<span class="material-icons">
-			</span>
-			<div class="pro-name">
-				<span>_chandani._<i class="fa fa-angle-down" style="font-size:20px"></i></span>
+	<div class="allchatcode">
+		<!-- header of page -->
+		<header>
+			<div class="chat-header container flex">
+					<!-- <span class="material-icons"></span> -->
+					<div class="pro-name">
+						<span>_chandani._<i class="fa fa-angle-down" style="font-size:20px"></i></span>
+					</div>
+				<!-- <span>_chandani._<i class="fa fa-angle-down" style="font-size:20px"></i></span> -->
+				<i class="fa fa-video-camera" style="font-size:1.25rem"></i>
+				<i class="fa fa-pencil-square-o" style="font-size:1.25rem"></i>
 			</div>
-		<!-- <span>_chandani._<i class="fa fa-angle-down" style="font-size:20px"></i></span> -->
-		<i class="fa fa-video-camera" style="font-size:1.25rem"></i>
-		<i class="fa fa-pencil-square-o" style="font-size:1.25rem"></i>
+		</header>
+		<!-- end of header -->
+							<div></div>
+										<div class="Search-box container"><!-- search box -->
+												<i class="fa fa-search" style="font-size:1.2rem; color:gray;"></i>
+												<input type="text" class="text-box1" placeholder="Search">
+										</div><!-- end of search box-->
+		<!-- chat view start -->
+		<div class="chat-view container"></div>
+		<!-- end of chat view -->
+		<!-- footer parts -->
+		<footer>
+			<div class="footer-box">
+				<!-- <i class="fa fa-camera" style="font-size:1.25rem"> -->
+				<span class="footer-title">Camera</span></i></div>
+		</footer>
+		<!-- end of footer -->
 	</div>
-</header>
-<!-- end of header -->
-					<div></div>
-								<div class="Search-box container"><!-- search box -->
-										<i class="fa fa-search" style="font-size:1.2rem; color:gray;"></i>
-										<input type="text" class="text-box1" placeholder="Search">
-								</div><!-- end of search box-->
-<!-- chat view start -->
-<div class="chat-view container">
-	
+
+<!-- try -->
+<div class="chatcode">
+		<!-- Header page -->
+	<header>
+		<div class="upperheader flex">
+			<div class="box5 flex">
+					<div class="arrow iconbox">
+				<a href="chatside.html">
+					<img src="https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/left_2-128.png" 
+						alt="" class="ICON">
+				</a>
+			</div>
+			<!-- icon end -->
+			<!-- pro and name -->
+				<div class="profilename flex">
+					<div class="img_container">
+						<img src="" alt="" class="Image_profile">
+					</div>
+					<span class="profiletext"></span>
+				</div>
+			<!-- pro and name -->
+			</div>
+			<!-- div 3 -->
+				<div class="flex ICON_BOX">
+					<div class="iconbox">
+						<img src="https://cdn2.iconfinder.com/data/icons/instagram-outline/19/17-512.png" alt="" 
+						class="ICON">
+					</div>
+					<div class="iconbox">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5O7h_oY7HkIz8bw9aa8hQvuDiIlufoSxgdA&usqp=CAU" alt="" class="ICON block">
+					</div>
+				</div>
+			<!-- div 3 -->
+		</div>
+	</header>
+	<!-- Header page -->
+	<!-- mid page -->
+	<!-- mid page -->
+	<!-- end page -->
+	<!-- <i class="fa fa-microphone" style="font-size:24px"></i> -->
+	<div class="typewriter">
+		<div class="inputtypewriter flex">
+			<div class="box2">
+				<div class="cambox">
+				<i class="fa fa-camera" style="font-size:20px"></i>
+				</div>
+				<input type="text" class="inputbox" placeholder="Message...">
+			</div>
+			<div class="flex box1">
+				<!-- <img src="" alt=""> -->
+				<!-- <i class="far fa-microphone"></i> -->
+				<i class="fa fa-microphone" style="font-size:24px"></i>
+				<i class="fa fa-photo" style="font-size:24px"></i>
+				<i class="fa fa-smile-o" style="font-size:24px"></i>
+			</div>
+		</div>
+	</div>
+	<!-- end page -->
 </div>
-<!-- end of chat view -->
-<!-- footer parts -->
-<footer>
-	<div class="footer-box"><i class="fa fa-camera" style="font-size:1.25rem"><span class="footer-title">Camera</span></i></div>
-</footer>
-<!-- end of footer -->
-<style type="text/css">
-*{
-	box-sizing: border-box;
-}
-body{
-	margin:0;
-} 
-/*head section*/
-header{
-	position:-webkit-sticky;
-	top:0;
-	position: sticky;
-	overflow:hidden;
-	width:100%;
-	background-color: #fff;
-	box-shadow:0 0.5px 3px 0 #808080;
-	padding: 0.5em; 
-	margin-bottom:1.2%;
-}
-.container{
-	width: 100%;
-	margin: 0 auto;
-}
-.flex{
-	display: flex;
-	justify-content: space-between; 
-}
-/*material-icons{
-	margin-left: 0;
-}*/
-.chat-header{
-	margin:0 auto;
-	width:90%;
-	/*border:1px solid red;*/
-	align-self:center;	
-}
-.pro-name{
-	width:40%;
-	margin-left:-10%;
-	/*border:1px solid hotpink;*/
-}
-.Search-box{
-	margin-top:10%;
-	margin: 0 auto;
-	width:90%;
-	display: flex;
-	padding: 0.1em;
-	margin-bottom: 5%;
-	border:0.1em solid #cdcdcd;
-	background-color:#fff;
-	border-radius: 0.2em;
-}
-.container i{
-	margin-left: 1%;
-
-}
-.text-box1{
-	width:70%;
-	/*color: #000;*/
-	font-size:1em;
-	margin-left: 2%;
-	background-color:#fff;
-	border: none;
-}
-/*chat-section*/
-.image-container{
-	width: 3.5em;
-	height: 3.5em;
-	margin-top: 1em;
-	margin-bottom: 1em;
-	border-radius: 50%;
-	margin-left:1em;
-	/*border: 1px solid #000;*/
-}
-.image{
-	width: 100%;
-	border-radius: 50%;
-}
-.chat-list{
-	/*display: flex;*/
-	/*margin: 0 auto;*/	
-	height:4em;
-	/*border: 1px solid red;*/
-}
-
-.chat-name-list{
-	width:90%;
-	height:5em;
-	/*border: 1px solid #800080;*/
-	margin-left:1em;
-	align-items: center;	
-	align-self: center;
-}
-.chat-name-list i{
-	padding: 1em;	
-}
-/*footer*/
-footer{
-		position:-webkit-sticky;
-	bottom: 0;
-	position: sticky;
-	overflow:hidden;
-	width:100%;
-	background-color: #fff;
-	box-shadow:0 0.5px 3px 0 #808080;
-	padding: 0.5em; 
-	 margin-top:5%;
-}
-.footer-box{
-	width:8em;
-	/*border: 1px solid red;*/
-	margin:0 auto;
-	padding: 0.5em;
-}
-
-.footer-title{
-	margin-left:0.3em;
-	/*border:1px solid blue;*/
-	text-align: center;
-}
-</style>
+<!-- try -->
 <script type="text/javascript" src="chatsidedesgin.js"></script>
 </body>
 </html>
