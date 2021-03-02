@@ -62,8 +62,6 @@ align-self: flex-end;
 	/*padding: 1em;*/
 }
 .user_profile_edit_sub_box{
-	/*border: 1px solid blue;*/
-	/*width: 95%;*/
 	padding: 1.2em;
 }
 .user_profile_edit_text{
@@ -76,7 +74,6 @@ align-self: flex-end;
 }
 .account_edit_part{
 	/*border: 1px solid green;*/
-
 }
 .text_account_edit_part{
 	/*text-align: center;*/
