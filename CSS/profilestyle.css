@@ -40,9 +40,35 @@ header .container i{
 	/*border:1px solid red;*/
 	margin-left: 0.2em;
 }
+.flex-container{
+	height:100%;
+	width:100%;
+	/*border: 1px solid red;*/
+}
 .box{
 	/*border:1px solid green;*/
 	padding:0.1em;
+}
+.box2{
+	/*border: 1px solid green;*/
+	display: flex;
+	width: 100%;
+}
+.img_1{
+	width: 32.5%;
+	margin: 0.1em;	
+}
+.profile_box{
+	width: 100%;
+		/*border:0.1em solid red;*/
+}
+.sub_profile_box{
+	padding:0.1em;
+	border:0.1em solid #868686;
+}
+.images{
+	width: 100%;
+	height: 100%;	
 }
 .sub-box{
 	/*border:0.1em solid blue;*/
@@ -95,19 +121,34 @@ header .container i{
 	display: block;
 }
 .edit{
-	width: 100%;
-	margin-top: 0.5em;
-	padding: 0.2em;
+	width:49%;
+	padding:0.2em;
 	border:0.1em solid #cdcdcd;
 	color: #000;
 	background-color: #fff;
 	border-radius: 0.2em;
 }
+.highlight{
+/*border: 1px solid blue;	*/
+}
+.highlight_sub{
+	/*border: 1px solid yellow;*/
+	text-align: center;
+	/*font-size: 0.5em;*/
+}
+.highlight_text{
+	font-size: 0.8em;
+
+}
 .add{
-	margin-top:0.2em;
+	width:3em;
+	height:3em;
+	/*border: 1px solid red;*/
 }
 .slider{
+	width:60%;
 	margin-top:1em;
+	margin: 0 auto;
 	/*border: 1px solid blue;*/
 	display: flex;
 	justify-content:space-between;
@@ -115,12 +156,18 @@ header .container i{
 .sub_slider{
 	width:50%;
 	display: flex;
-	justify-content: space-between;
-	/*border: 1px solid green;*/
+}
+.button_edit_saved{
+	/*border: 1px solid red;*/
+	padding: 0.3em;
 }
 .img_icon{
 	/*border: 1px solid red;*/
 	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: #000;
 }
 /**/
 .image_box{
@@ -151,7 +198,7 @@ height:7.2em;
 /*footer*/
 footer{
 	bottom: 0;	
-	position: sticky;
+	position:sticky;
 	overflow:hidden;
 	width:100%;
 	box-shadow: inset 0 1px 2px 0 #696969;

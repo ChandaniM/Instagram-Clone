@@ -13,8 +13,9 @@ header{
 	width:100%;
 	background-color: #fff;
 	box-shadow:0 0.5px 3px 0 #808080;
-	padding: 0.5em; 
+	/*padding: 0.5em; */
 	margin-bottom:1em;
+	/*border:1px solid green;*/
 }
 .container{
 	width: 100%;
@@ -29,14 +30,19 @@ header{
 }*/
 .chat-header{
 	margin:0 auto;
-	width:90%;
+	width:95%;
 	/*border:1px solid red;*/
 	align-self:center;
 	align-items: center;	
 }
+.BOXICON {
+	width: 20%;
+	/*border: 1px solid blue;*/
+}
 .pro-name{
-	width:30%;
+	width:8em;
 	margin-left:1em;
+	align-self: center;
 	/*margin-left:-10%;*/
 	/*border:1px solid hotpink;*/
 }
@@ -62,6 +68,11 @@ header{
 	margin-left: 2%;
 	background-color:#fff;
 	border: none;
+}
+.box12{
+	/*border: 1px solid red;*/
+	display: flex;
+	justify-content: space-between;
 }
 /*chat-section*/
 .image-container{
@@ -103,7 +114,7 @@ header{
 footer{
 		position:-webkit-sticky;
 	bottom: 0;
-	position: sticky;
+	position:fixed;
 	overflow:hidden;
 	width:100%;
 	background-color: #fff;

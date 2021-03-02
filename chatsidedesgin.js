@@ -1,15 +1,5 @@
-function chatcode(name) {
-	// var index=imagesArray[index];
-	// console.log(imagesArray[index]);
-	document.getElementsByClassName("chatcode")[0].style.display="block";
-	document.getElementsByClassName("allchatcode")[0].style.display="none";
-	document.getElementsByClassName("profiletext")[0].innerHTML=name;
-	document.getElementsByClassName("Image_profile")[0].setAttribute('src','imagesArray[index]');
-}
 
-	
-
- const imagesArray=[
+ var imagesArray=[
 		"https://www.thesprucepets.com/thmb/pPXXUm0Ng3Cwlcsk5iTevb41fPc=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/40386520_272666870012786_5732696489881099002_n-5b98360ac9e77c0050fa8a73.jpg",
 		"https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTQ3NTI2OTA4NzY5MjE2MTI4/drake_photo_by_prince_williams_wireimage_getty_479503454.jpg",
 		"https://i.pinimg.com/236x/67/a4/df/67a4dff2d17d58d0257baf079d508676--wallpaper-desktop-wallpapers.jpg",
@@ -23,6 +13,15 @@ function chatcode(name) {
 	];
 
 var nameArray=["chandani","champaqnepapi","Taylorswift","selenagomez","pearlvpuri","tony stark","shawnmendes","zainimam_official","robinsharma","_PS_"];
+ function chatcode(name) {
+	var index=nameArray.indexOf(name);	
+	// console.log(imagesArray[index]);
+	document.getElementsByClassName("chatcode")[0].style.display="block";
+	document.getElementsByClassName("allchatcode")[0].style.display="none";
+	document.getElementsByClassName("profiletext")[0].innerHTML=name;
+	document.getElementsByClassName("Image_profile")[0].setAttribute('src',imagesArray[index]);
+}
+
  var storyContainer=document.getElementsByClassName('chat-view');
 		for (var i = 0; i<10; i++) {
 			var div = document.createElement("div");//parent

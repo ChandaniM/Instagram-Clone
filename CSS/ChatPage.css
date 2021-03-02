@@ -1,10 +1,4 @@
-*{
-	box-sizing: border-box;
-}
-body{
-	margin:0;
-}
-header{
+.ChatHeader{
 	position:-webkit-sticky;
 	top:0;
 	position: sticky;
@@ -13,7 +7,7 @@ header{
 	background-color: #fff;
 	box-shadow:0 0.5px 3px 0 #696969;
 	padding: 0.2em;
-	/*border: 1px solid red;*/
+	/*border: 1px solid red;	*/
 
 }
 .upperheader{
@@ -21,17 +15,11 @@ header{
 	margin: 0 auto;
 	/*border: 1px solid black;*/
 }
-.flex{
-	display: flex;
-	justify-content: space-between; 
-}
-.flex-space{
-	display: flex;
-}
 .iconbox{
 	width:2em;
 	height:2em;
 	align-self: center;
+	/*align-items: center;*/
 	/*border: 1px solid blue;*/
 }
 .ICON{
@@ -42,10 +30,6 @@ header{
 	width: 1.5em; 
 	height: 1.5em;
 	margin-top: 0.2em;
-	/*border: 1px solid green;*/
-}
-.profilename{
-	/*width:30%;*/
 	/*border: 1px solid green;*/
 }
 .img_container{
@@ -62,9 +46,12 @@ header{
 	border: 1px solid #868686;
 	border-radius: 50%;
 }
+.profilename{
+	margin-left: 1em;
+	/*border: 1px solid #FF00FF;*/
+}
 .profiletext{
 	margin-left:0.5em;
-	font-size: 1.5em;
 	align-self: center;
 }
 .ICON_BOX{
@@ -89,12 +76,13 @@ header{
 	/*border: 1px solid blue;*/
 }
 .cambox{
-	background-color: blue;
+	background-color: yellow;
 	border-radius: 50%;
 	padding: 0.3em;
 	margin-left: 0.3em;
+	filter: invert(100%);
 }
-.fa-camera{filter: invert(100);}
+/*.fa-camera{filter: invert(100);}*/
 .box2{
 	display: flex;	
 	width:70%;
@@ -110,9 +98,9 @@ header{
 	margin-left: 0.3em;
 }
 .box5{
-	/*border: 1px solid blue;*/
+	/*border: 1px solid #F70D1A;*/
 	display: flex;
-	width:65%;
+	/*justify-content: space-between;*/
 }
 .chatcode{
 	display: none;

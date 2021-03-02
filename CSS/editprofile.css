@@ -1,0 +1,88 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+}
+.flex{
+	display: flex;
+	/*align-self: center;*/
+}
+.flex-space{
+	display: flex;
+	justify-content:space-between;
+}
+.header{
+	width: 100%;
+	padding: 0.5em;
+	/*border: 1px solid red;*/
+}
+.container_sub_header{
+	width: 1.5em;
+	height: 1.5em;
+}
+.image_container_sub_header{
+	width: 100%;
+	height: 100%;
+}
+.sub_header_item{
+align-self: flex-end;
+}
+.sub_header_item_span{
+	margin-left:2em;
+	text-align: center;
+	font-weight: bold;
+}
+.sub_header{
+	/*border: 1px solid brown;*/
+}
+.user_profile{
+	/*border: 1px solid brown;*/
+	padding:2em;
+	padding-bottom: 1em;
+}
+.user_profile_container_img{
+	width:5em;
+	height:5em;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.user_profile_container_sub_image{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.user_profile_text{
+	text-align: center;
+	color: #00f;
+}
+.user_profile_edit_box{
+	/*border: 1px solid red;*/
+	/*width: 95%;*/
+	/*padding: 1em;*/
+}
+.user_profile_edit_sub_box{
+	/*border: 1px solid blue;*/
+	/*width: 95%;*/
+	padding: 1.2em;
+}
+.user_profile_edit_text{
+	width: 100%;
+	border:none;
+	outline: none;
+	margin-bottom:1em;
+	background: transparent;
+	border-bottom: 0.1em solid gray;
+}
+.account_edit_part{
+	/*border: 1px solid green;*/
+
+}
+.text_account_edit_part{
+	/*text-align: center;*/
+	color: #00f;
+	/*margin-left: 1em;*/
+	padding: 0.5em;
+	border-bottom: 1px solid #868686;
+	border-top: 1px solid #868686;
+}

@@ -27,8 +27,6 @@ var sideImage=[
 		"https://webneel.com/daily/sites/default/files/images/daily/09-2014/3-nature-photography-pedraterrinha.jpg"
 	 ];
 var spanmsg=["champaqnepapi liked your comment:awesome song sir!.","pearlvpuri mentioned you in a comment: @chandani","Taylorswift liked your comment:your eyes are just fire.","selenagomez liked your comment: your new album was aswesome.","pearlvpuri,tony stark and 10,550other like your photo","tony stark liked your comment:your new moive was amzaing.!!!","shawnmendes,_PS_ and 100other like your video","zainimam_official mentioned you in a comment:@pearlvpuri","robinsharma comment:yes man you are correct.","_PS_,photoshoot_123 and 10,150other like your photo"];
-
-
  var likeContainer=document.getElementsByClassName('like-container');
 		for (var i = 0; i<20; i++) {
 			var div = document.createElement("div");//parent
@@ -55,6 +53,23 @@ var spanmsg=["champaqnepapi liked your comment:awesome song sir!.","pearlvpuri m
 			imgBox.classList.add("image-box");
 			imgBox.setAttribute('alt','Images');
 			imgBox.setAttribute('src',sideImage[i]);
+
+			var div_button=document.createElement("div");
+			div_button.classList.add('conform_button_container');
+
+			var sub_button_one=document.createElement("span");
+			sub_button_one.classList.add('conform_button');	
+
+			var sub_button_two=document.createElement("span");
+			sub_button_two.classList.add('delete_button');
+
+			div_button.appendChild(sub_button_one);
+			div_button.appendChild(sub_button_two);
+				
+
+
+			imgbox.appendChild(div_button);
+
 			imgbox.appendChild(imgBox);
 			div.appendChild(imgbox);
 			
