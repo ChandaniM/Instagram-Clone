@@ -1,4 +1,6 @@
-
+function msg() {
+		alert("NOT DONE YET!!!!!!!");
+	}
  var imagesArray=[
 		"https://www.thesprucepets.com/thmb/pPXXUm0Ng3Cwlcsk5iTevb41fPc=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/40386520_272666870012786_5732696489881099002_n-5b98360ac9e77c0050fa8a73.jpg",
 		"https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTQ3NTI2OTA4NzY5MjE2MTI4/drake_photo_by_prince_williams_wireimage_getty_479503454.jpg",
@@ -57,3 +59,8 @@ var nameArray=["chandani","champaqnepapi","Taylorswift","selenagomez","pearlvpur
 		subpart.appendChild(camera);
 			storyContainer[0].appendChild(div);//we gave parent to grandparents.lol 
 		}
+function numacc(){
+	// body...
+	// document.getElementsByClassName("fa-ellipsis-v")[i].style.display="none";
+		document.getElementsByClassName("box_acc")[0].style.display="block";
+}

@@ -218,3 +218,73 @@ footer{
 	width: 100%;
 	height: 100%;
 }
+/*account page css*/
+.box_acc{
+	width: 100%;
+	/*height: 100%;*/
+	/*border: 1px solid red;*/
+	/*padding: 1em;*/
+	display: none;
+	bottom: 0;
+	position:fixed;
+}
+.numacc{
+	padding: 1em;
+	/*border: 1px solid green;*/
+	background-color: white;
+  box-shadow: 0px -4px 3px #cdcdcd;
+	flex-direction: column;
+	border-top-right-radius:2em;
+	border-top-left-radius:2em;
+}
+.designbox{
+	padding: 0.5em;
+	padding-top: 0;
+	/*border: 1px solid green;*/
+
+}
+.design_sample{
+	width:3em;
+	height:0.4em;
+	border-radius:3em;
+	margin: 0 auto;
+	background-color:black;
+}
+.img_container_profile{
+	/*border: 1px solid red;*/
+	width:3em;
+	height:3em;
+	border-radius:5em;
+}
+.img_container_profile_box{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.box_sec{
+	align-items: center;
+	/*align-self: center;*/
+	/*border:2px solid pink;*/
+}
+.sub_box_acc{
+	width:10em;
+	padding:0.5em;
+	/*border:0.5px solid #00f;*/
+	/*align-self: center;*/
+	align-items: center;
+	text-align: left;
+}
+.radio_box_sub{
+	width:2em;
+	height:2em;
+	/*border-radius: 50%;*/
+	/*border:0.5px solid #00f;*/
+  border-radius: 50%;
+}
+.radio_box{
+	border-radius: 50%;
+
+}
+.pro_name{
+	margin-left: 1em;
+}

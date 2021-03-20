@@ -62,7 +62,7 @@ img{
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	/*align-items: center;*/
 	padding: 0.1em;
 }
@@ -125,6 +125,14 @@ width: 100%;
 	margin-left: 2%;
 	  font-family: 'Montserrat', sans-serif,'Open Sans', sans-serif;
 }
+.span-name{
+	/*border: 1px solid red;*/
+	display: block;
+	white-space: nowrap; 
+  width:4.3em;
+  overflow: hidden;
+  text-overflow: clip; 
+}
 
 .iconsTray{
 	justify-content: space-between;
@@ -174,4 +182,44 @@ footer{
 .ICON{
 	width: 100%;
 	height: 100%;
+}
+/*notification*/
+.box_notification{
+	width: 100%;
+	/*height: 100%;*/
+	/*border: 1px solid red;*/
+	/*padding: 1em;*/
+	display: none;
+		/*display: none;*/
+	bottom: 0;
+	position:fixed;
+}
+.numacc{
+	padding: 1em;
+	/*border: 1px solid green;*/
+	background-color: white;
+  box-shadow: 0px -4px 3px #cdcdcd;
+	flex-direction: column;
+	border-top-right-radius:2em;
+	border-top-left-radius:2em;
+}
+.designbox{
+	padding: 0.5em;
+	padding-top: 0;
+	padding-bottom: 2em;
+	/*border: 1px solid green;*/
+
+}
+.design_sample{
+	width:3em;
+	height:0.4em;
+	border-radius:3em;
+	margin: 0 auto;
+	background-color:#cdcdcd;
+}
+.sub_box_acc{
+	/*border:0.5px solid #f00;*/
+	/*align-self: center;*/
+	/*align-items: center;*/
+	flex-direction: column;
 }

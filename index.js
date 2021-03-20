@@ -2,13 +2,17 @@ window.onload=function(){
     stories();
     posts();
 }
+// <script type="text/javascript">
+	function msg() {
+		alert("NOT DONE YET!!!!!!!");
+	}
 function stories(){
 	const imagesArray=[
-		"https://www.thesprucepets.com/thmb/pPXXUm0Ng3Cwlcsk5iTevb41fPc=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/40386520_272666870012786_5732696489881099002_n-5b98360ac9e77c0050fa8a73.jpg",
+		"https://www.pinkvilla.com/files/styles/contentpreview/public/naagin_3_actor_pearl_v_puri_all_set_to_make_his_big_bollywood_debut_heres_what_he_has_to_say.jpg?itok=UwkSmdN8",
 		"https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTQ3NTI2OTA4NzY5MjE2MTI4/drake_photo_by_prince_williams_wireimage_getty_479503454.jpg",
 		"https://i.pinimg.com/236x/67/a4/df/67a4dff2d17d58d0257baf079d508676--wallpaper-desktop-wallpapers.jpg",
 		"https://pyxis.nymag.com/v1/imgs/3b6/d67/84797c3613ee95604b9262ce0823c67a2e-21-selena-gomez.rsquare.w330.jpg",
-		"https://www.pinkvilla.com/files/styles/contentpreview/public/naagin_3_actor_pearl_v_puri_all_set_to_make_his_big_bollywood_debut_heres_what_he_has_to_say.jpg?itok=UwkSmdN8",
+		"https://www.thesprucepets.com/thmb/pPXXUm0Ng3Cwlcsk5iTevb41fPc=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/40386520_272666870012786_5732696489881099002_n-5b98360ac9e77c0050fa8a73.jpg",
 		"https://i.pinimg.com/236x/eb/4f/4a/eb4f4a196776660182e47719a65d44fd.jpg",
 		"https://assets.capitalfm.com/2016/51/shawn-mendes-kiss-108s-jingle-ball-2016-1482391888-custom-0.jpg",
 		"https://i.pinimg.com/236x/91/7e/75/917e7587aa40bb73af2b54e47cb27add.jpg",
@@ -55,7 +59,7 @@ function posts(){
 	 ];
 	 var namearr=["champaqnepapi","chandani","Taylorswift","selenagomez","pearlvpuri","tony stark","shawnmendes","zainimam_official","robinsharma","_PS_"];
 	 // likes texts 
-	 var namestories =["YourStory","champaqnepapi","Taylorswift","selenagomez","pearlvpuri","tony stark","shawnmendes","zainimam_official","robinsharma","_PS_"];
+	 var namestories =["YourStory","champaqnepapi","Taylorswift","selenagomez","chandani","tony stark","shawnmendes","zainimam_official","robinsharma","_PS_"];
 
       var footarr1=[
 	      "liked by fredvanvleet 6,592,409others",
@@ -117,9 +121,14 @@ function posts(){
 		var textmsg= document.createElement("span");//child of box (part1)head
 		textmsg.setAttribute('class','text-msg');
 		containerdiv.appendChild(textmsg);
+
+
+
+
 		let dots=document.createElement('i');
 		dots.classList.add('fa');
 		dots.classList.add('fa-ellipsis-v');
+		dots.setAttribute("onclick","add_Option()");
 		dots.style.fontSize='1.5rem';
 		containerdiv.appendChild(dots);
 		div.appendChild(part1);
@@ -151,8 +160,22 @@ function posts(){
 		let heart=document.createElement('i');
 		heart.classList.add('fa');
 		heart.classList.add('fa-heart-o');
+		heart.setAttribute("onclick","darkheart()");
 		iconssubtray.appendChild(heart);
 		heart.style.fontSize='1.5rem';
+
+/*heartdark icon is added*/
+		let darkheart=document.createElement('i');
+		darkheart.classList.add('fa');
+		darkheart.classList.add('fa-heart');
+		darkheart.style.fontSize='1.5rem';
+		darkheart.style.display='none';
+		darkheart.style.color='red';
+		// darkheartheart.setAttribute("onclick","bookmark()");
+		iconssubtray.appendChild(darkheart);
+
+
+
 
 		/*comment icon is added*/
 		let comment=document.createElement('i');
@@ -174,7 +197,16 @@ function posts(){
 		bookmark.classList.add('fa');
 		bookmark.classList.add('fa-bookmark-o');
 		bookmark.style.fontSize='1.5rem';
+		bookmark.setAttribute("onclick","bookmark()");
 		iconstray.appendChild(bookmark);
+		// BOOKmark dark
+		let darkbookmark=document.createElement('i');
+		darkbookmark.classList.add('fa');
+		darkbookmark.classList.add('fa-bookmark');
+		darkbookmark.style.fontSize='1.5rem';
+		darkbookmark.style.display='none';
+		// bookmark.setAttribute("onclick","bookmark()");
+		iconstray.appendChild(darkbookmark);
 		
 		/*ICons part end*/ 
 		part3.appendChild(iconstray);
@@ -219,6 +251,21 @@ function posts(){
 
 }
 
-function like(){
-	
+function bookmark(){
+		 for (var i = 0; i<10; i++) {
+		document.getElementsByClassName("fa-bookmark-o")[0].style.display="none";
+		document.getElementsByClassName("fa-bookmark")[0].style.display="block";
+	}
+}
+
+function darkheart(){
+	 for (var i = 0; i<10; i++){
+	document.getElementsByClassName("fa-heart-o")[i].style.display="none";
+		document.getElementsByClassName("fa-heart")[i].style.display="block";
+	}
+}
+function add_Option(){
+	// body...
+	// document.getElementsByClassName("fa-ellipsis-v")[i].style.display="none";
+		document.getElementsByClassName("box_notification")[0].style.display="block";
 }
